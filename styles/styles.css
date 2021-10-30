@@ -1,0 +1,94 @@
+/*Envolve tudo*/
+* {/*Formatação site por inteiro*/
+    margin: 0;/*Margem*/
+    padding: 0;/*Padding*/
+}
+
+
+/*Body*/
+body {/*Fundo site*/
+    background-image: linear-gradient(to right, rgb(240, 116, 34), rgb(240, 123, 40), rgb(241, 130, 45), rgb(241, 137, 51), rgb(242, 144, 56), rgb(242, 151, 62), rgb(243, 158, 67), rgb(243, 165, 73), rgb(244, 172, 78), rgb(244, 179, 84), rgb(245, 186, 89), rgb(245, 193, 95));/*Cor fundo*/
+}
+
+
+/*Menu lateral fixo*/
+#check {/*Input check - icon menu*/
+    display: none;/*Display nulo*/
+}
+#icone {/*Icon menu*/
+    cursor: pointer;/*Cursor sobre icon*/
+    padding: 15px;/*Tamanho*/
+    position: fixed;/*Posição fixa em relação a página*/
+    z-index: 1;
+}
+.barra {/*Div elementos do menu*/
+    background-color: black;/*Fundo*/
+    min-height: 100%;/*Tamanho minimo de altura*/
+    width: 250px;/*Tamanho largura*/
+    position: fixed;/*Posição fixa em relação a página*/
+    transition: all .0.5s linear;/*Transição*/
+    left: -300px;
+}
+.navmenu {/*Nav elementos menu*/
+    width: 100%;/*Largura*/
+    position: absolute;/*Posição*/
+    top: 60px;/*Distância acima do icon*/
+}
+.navmenu a {/*Nav a elementos menu*/
+    text-decoration: none;/*Linha de link nula*/
+}
+.link {/*Links*/
+    background-color: rgb(black);/*Fundo*/
+    padding: 20px;/*Tamanho*/
+    font-family: 'Times New Roman', Times, serif;/*Fonte formato*/
+    font-size: 25px;/*Tamanho fonte*/
+    text-align: center;/*Alinhado ao centro*/
+    transition: all .0.5s linear;/*Transição*/
+    color: white;/*Cor texto*/
+    border-bottom: 2px solid white;/*Bordas*/
+    opacity: 0;/*Opacidade*/
+    margin-top: 200px;/*Margem acima*/
+}
+.link:hover {/*Hover link*/
+    background-color: white;/*Cor de fundo*/
+    color: black;/*Cor fonte*/
+}
+#check:checked ~ .barra {
+    transform: translateX(300px);
+}
+#check:checked ~ .barra nav a .link {
+    opacity: 1;
+    margin-top: 0;
+    transition-delay: .0.5s;
+}
+.github {
+    text-align: center;
+    padding-top: 20px;
+}
+.github:hover {
+    background-color: gray;
+}
+
+
+/*Footer*/
+footer {/*Footer em si*/
+    background-image: linear-gradient(90deg,  #000428, #004e92 );/*Fundo*/
+    color:white;/*Cor fonte*/
+    font-size: 20px;/*Tamanho fonte*/
+    font-family: 'Courier New', Courier, monospace;/*Fonte*/
+    text-align: center;/*Alinhamento ao centro*/
+    list-style-type: none;/*Decoração nula*/
+    padding-top: 20px;/*Padding acima*/
+}
+#membros {/*Id membros*/
+    font-size: 20px;/*Tamanho fonte*/
+    font-family: 'Courier New', Courier, monospace;/*Fonte*/
+    padding: 5px;/*Distância*/
+}
+.footerend {/*Footer final*/
+    text-align: center;/*Alinhamento ao centro*/
+    color: white;/*Cor fonte*/
+    padding: 20px;/*Tamanho distância*/
+    font-size: 25px;/*Tamanho fonte*/
+    font-family: 'Courier New', Courier, monospace;/*Tamanho fonte*/
+}

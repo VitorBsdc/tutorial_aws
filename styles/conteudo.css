@@ -1,0 +1,83 @@
+/*Header*/
+.tituloheader {/*Titulo principal*/
+    text-align: center;/*Alinhar ao centro*/
+    font-family: serif;/*Fonte*/
+    padding: 30px;/*Distância*/
+    background-image: linear-gradient(90deg, #000428,#004e92 );
+    color: white;/*Cor fonte*/
+}
+
+
+/*Main*/
+.texto {/*Texto conteúdo*/
+    font-family: 'Courier New', Courier, monospace;/*Fonte*/
+    font-size: 25px;/*Tamanho fonte*/
+    padding: 30px;/*Distância*/
+    color: white;/*Cor fonte*/
+    text-align: justify;/*Alinhamento*/
+    padding: 100px;/*Distância*/
+}
+.texto2 {/*Texto conteúdo*/
+    font-family: 'Courier New', Courier, monospace;/*Fonte*/
+    font-size: 25px;/*Tamanho fonte*/
+    padding: 30px;/*Distância*/
+    color: white;/*Cor fonte*/
+    text-align: justify;/*Alinhamento*/
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.linkgit {/*Link instaldor*/
+    text-align: center;/*Alinhamento*/
+    text-decoration: none;
+}
+.linkgit:hover {/*Hover do link instalador*/
+    cursor: pointer;/*Cursor sobre*/
+    color: orange;/*Cor*/
+}
+.subtitulo {/*Subtitulos*/
+    text-align: right;/*Alinhamento a direita*/
+    margin: 20px;/*Margens*/
+    margin-right: 30px;/*Margem direita*/
+    font-family: serif;/*Fonte*/
+    color: white;/*Cor fonte*/
+}
+.conteudo1 {/*Parte1*/
+    text-align: center;/*Alinhamento ao centro*/
+}
+.conteudo1 img {/*Diretamente imagens*/
+    border-radius: 20px;/*Bordas img's*/
+}
+.conteudo2 {/*Parte2*/
+    text-align: center;/*Alinhamento ao centro*/
+}
+.conteudo2 img {/*Diretamente imagens*/
+    border-radius: 15px;/*Bordas img's*/
+}
+.conteudo3 {/*Parte3*/
+    text-align: center;/*Alinhamento ao centro*/
+}
+.conteudo3 img {/*Diretamente imagens*/
+    border-radius: 15px;/*Bordas img's*/
+}
+.conteudo4 {/*Parte4*/
+    text-align: center;/*Alinhamento ao centro*/
+}
+.conteudo4 img {/*Diretamente imagens*/
+    border-radius: 15px;/*Bordas img's*/
+}
+button {/*Botão*/
+    padding: 15px;/*Distância*/
+    border-radius: 15px;/*Bordas*/
+    outline: none;/*Linha de fora*/
+    border: none;/*Bordas nula*/
+}
+#imagens {/*Tag corrige proporção*/
+    width: 1200px;
+    height: 600px;
+}
+#ultimaimg {/*Corrigir distância*/
+    padding-bottom: 40px;
+}
+#primeiraimg {/*Corrigir distância*/
+    padding-top: 40px;
+}

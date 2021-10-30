@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles/styles.css"><!--Style Menu lateral fixo + footer-->
+    <link rel="stylesheet" href="styles/conteudo.css"><!--Style Conteúdo do site por si-->
+    <link rel="icon" href="imagens/favicon-32x32.png"><!--Icon da página-->
+    <title>Nexus Group | Tutorial</title><!--Titulo-->
+</head>
+<body>
+    <!--Menu lateral fixo-->
+    <input type="checkbox" id="check"><!--Input ação icon menu-->
+    <label id="icone" for="check"><img src="imagens/iconmenu.png" alt="iconmenu.png"></label><!--Icon menu-->
+
+    <div class="barra"><!--Div do menu-->
+        <nav class="navmenu"><!--Nav elementos do menu-->
+            <a href="#parte1"><div class="link">Criando AWS</div></a><!--Elementos-->
+            <a href="#parte2"><div class="link">Instalando Putty</div></a><!--Elementos-->
+            <a href="#parte3"><div class="link">Acessando Putty</div></a><!--Elementos-->
+            <a href="#parte4"><div class="link">Acessando WinSCP</div></a><!--Elementos-->
+            <a href="https://github.com/NexusGroup6" target="_blank"><div class="github"><img src="imagens/github.png" alt="github"></div></a><!--Logo github com link-->
+        </nav>
+    </div>
+
+    <header><!--Header-->
+        <h1 class="tituloheader">Tutorial AWS</h1><!--Titulo principal-->
+    </header>
+
+    <main><!--Corpo site-->
+        <div class="conteudo1">
+            <h1 id="parte1" class="subtitulo">Criando máquina virtual AWS</h1>
+            <h1 class="texto2">- Acesse o site oficial da AWS: </h1>
+            <button><a  target="_blank" href="https://aws.amazon.com/pt/console/" class="linkgit"><h1>AWS</h1></a></button>
+            <br><br>
+            <img id="imagens" src="prints_site/antes_login .png" alt=""><br><br>
+            <h1 class="texto2">- Insira o ID da Conta, nome de usuário e sua senha.</h1>
+            <img src="prints_site/tela_login.png" alt=""><br><br>
+            <h1 class="texto2">- Execute a função "EC2".</h1>
+            <img  id="imagens" src="prints_site/criando_ec2.png" alt=""><br><br>
+            <h1 class="texto2">- Selecione o Sistema Operacional desejado e clique em próximo.</h1>
+            <img id="imagens" src="prints_site/etapa1_selecionar_sistema.png" alt=""><br><br>
+            <h1 class="texto2">- Selecione uma instância e clique em próximo.</h1>
+            <img id="imagens" src="prints_site/etapa2_t2micro.png" alt=""><br><br>
+            <h1 class="texto2">- Configure os detalhes da instância e clique em próximo.</h1>
+            <img id="imagens" src="prints_site/etapa_3.png" alt=""><br><br>
+            <h1 class="texto2">- Selecione o tipo de armazenamento e clique em próximo.</h1>
+            <img id="imagens" src="prints_site/etapa_4.png" alt=""><br><br>
+            <h1 class="texto2">- Adicione as tags. Na chave insira o valor "Name" e na coluna Valor insira o nome desejado, clique em próximo.</h1>
+            <img  id="imagens" src="prints_site/etapa_5.png" alt=""><br><br>
+            <h1 class="texto2">- Adicione os protocolos HTTP e HTTPS, e ocasionalmente configure o nome do grupo de segurança. Clique em "Verificar e Ativar".</h1>
+            <img id="imagens" src="prints_site/etapa_6.png" alt=""><br><br>
+            <h1 class="texto2">- Revise as características atribuídas e clique em "Executar".</h1>
+            <img id="imagens" src="prints_site/etapa_7.png" alt=""><br><br>
+            <h1 class="texto2">- Agora você irá selecionar um novo par de chaves e atribuir um nome a ela. Importante: você não poderá perder este arquivo, guarde-o bem em sua máquina física.</h1>
+            <img width="800px" height="500px" src="prints_site/chave.png" alt=""><br><br>   
+            <h1 class="texto2">- Após esses passos, sua máquina virtual da AWS estará pronta para ser manuseada.</h1>
+        </div>  
+
+        <div class="conteudo2">
+            <h1 id="parte2" class="subtitulo">Instalando puttygen/putty</h1>
+            <h1 class="texto2">- Acesse o site oficial da putty:</h1>
+            <button><a  target="_blank" href="https://www.putty.org/" class="linkgit"><h1>Putty</h1></a></button>
+            <br><br>
+            <img width="1200px" height="500px"  src="prints_site/site_putty.png" alt=""><br><br>
+            <h1 class="texto2">- Selecione o link de acordo com a sua máquina e Sistema Operacional.</h1>
+            <img width="1200px" height="500px"  src="prints_site/download_putty.png" alt=""><br><br>
+            <h1 class="texto2">- Após abra o instalador.</h1>
+            <img src="prints_site/instalador_putty.png" alt=""><br><br>
+            <h1 class="texto2">- Com o instaldor aberto, utilize o botão "Next".</h1>
+            <img src="prints_site/instalador_putty2.png" alt=""><br><br>
+            <h1 class="texto2">- Selecione o local da instalação e de "Next".</h1>
+            <img src="prints_site/instalador_putty3.png" alt=""><br><br>
+            <h1 class="texto2">- Agora autorize a instalação.</h1>
+            <img src="prints_site/instalador_putty4.png" alt=""><br><br>
+            <h1 class="texto2">- Aguarde o processo de instalação.</h1>
+            <img src="prints_site/instalador_putty5.png" alt=""><br><br>
+            <h1 class="texto2">- Concluída a ação de "Finish" e pronto. Processo concluído.</h1>
+            <img id="ultimaimg" src="prints_site/instalador_putty6.png" alt="">
+        </div>
+
+        <div class="conteudo3">
+            <h1 id="parte3" class="subtitulo">Acessando máquina via puttygen/putty</h1>
+            <h1 class="texto2">- Abra o puttygen e selecione a opção "Load".</h1>
+            <img id="primeiraimg" src="putty_tutor_imgs/putty_load.PNG" alt=""> <br><br>
+            <h1 class="texto2">- Selecione All Files em seu gerenciador de arquivos.</h1>
+            <img src="putty_tutor_imgs/putty_allfiles.PNG" alt=""><br><br>
+            <h1 class="texto2">- Agora selecione a chave em formato pem.</h1>
+            <img src="putty_tutor_imgs/putty_selecionararquivo.PNG" alt=""><br><br>
+            <h1 class="texto2">- Após selecionar, clique em OK.</h1>
+            <img src="putty_tutor_imgs/putty_ok.PNG" alt=""><br><br>
+            <h1 class="texto2">- Selecine a opção "Save private key".</h1>
+            <img src="putty_tutor_imgs/putty_privatekey.PNG" alt=""><br><br>
+            <h1 class="texto2">- Salve a chave em seu computador.</h1>
+            <img src="putty_tutor_imgs/putty_salvararquivo.PNG" alt=""><br><br>
+            <h1 class="texto2">- Agora somente de Sim para avançar.</h1>
+            <img src="putty_tutor_imgs/putty_sim.PNG" alt=""><br><br>
+            <h1 class="texto2">- Abra o Putty e adicione o IP da máquina virtual criada na aba Session.</h1>
+            <img src="putty_tutor_imgs/putty_ip.PNG" alt=""><br><br>
+            <h1 class="texto2">- Após selecione "SSH" no menu lateral disponível.</h1>
+            <img src="putty_tutor_imgs/putty_ssh.PNG" alt=""><br><br>
+            <h1 class="texto2">- Clique em "Auth".</h1>
+            <img src="putty_tutor_imgs/putty_auth.PNG" alt=""><br><br>
+            <h1 class="texto2">- Dentro de Auth selecione "Browser".</h1>
+            <img src="putty_tutor_imgs/putty_browser.PNG" alt=""><br><br>
+            <h1 class="texto2">- Selecione a chave criada no Puttygen.</h1>
+            <img src="putty_tutor_imgs/putty_abrirnoputty.PNG" alt=""><br><br>
+            <h1 class="texto2">- Agora somente selecione a opção "Open".</h1>
+            <img src="putty_tutor_imgs/putty_open.PNG" alt=""><br><br>
+            <h1 class="texto2">- Dentro da máquina virtual indique o nome da máquina. No caso abaixo utilizamos ubuntu.</h1>
+            <h1 class="texto2">Atenção após este processo você irá ter que utilizar os comandos: "sudo su", "apt update", "apt upgrade" e "apt install apache2". Na respectiva ordem apresentada.</h1>
+            <img src="putty_tutor_imgs/putty_loginubuntu.PNG" alt="">         
+            <h1 class="texto2">- Pronto sua máquina da AWS está rodando em seu computador.</h1>
+        </div>
+
+        <div class="conteudo4">
+            <h1 id="parte4" class="subtitulo">Acessando WinSCP</h1>
+            <h1 class="texto">Instale o WinSCP em sua máquina:</h1>
+            <button><a  target="_blank" href="https://winscp.net/eng/download.php" class="linkgit"><h1>WinSCP</h1></a></button>
+            <h1 class="texto2">- Abra o WinSCP e insira o IP na opção Host e nome da máquina utilizada em Usuário (ex: ubuntu). Após clique em avançado.</h1>
+            <img src="winscpimg/1.PNG" alt=""><br><br>
+            <h1 class="texto2">- Agora selecione no menu lateral "SSH" e após "Autenticação". Agora em "Arquivo de Chave privada:" selecione a chave ppk da máquina. E clique em Ok.</h1>
+            <img src="winscpimg/2.PNG" alt=""><br><br>
+            <h1 class="texto2">- Selecione Sim para confirmar o acesso.</h1>
+            <img src="winscpimg/3.PNG" alt=""><br><br>
+            <h1 class="texto2">- Agora você irá ter que utilizar o comando sudo su na máquina virtual.</h1>
+            <img src="winscpimg/4.PNG" alt=""><br><br>
+            <h1 class="texto2">- E após utilize o comando "chown -R ubuntu:ubuntu /var/www/html".</h1>
+            <img src="winscpimg/5.PNG" alt=""><br><br>
+            <h1 class="texto2">- Volte ao WinSCP e estará pronto para adicionar os arquivos na pasta raiz de hospedagem.</h1>
+            <h1 class="texto2">Atenção: você deverá adicionar os arquivos e pastas do seu site dentro da pasta "html".</h1>
+            <h1 class="texto2">E pronto! Seu site já esta disponível dentro do seu servidor da AWS na internet. (Acesse-o pelo Ip da máquina de qualquer lugar).</h1>
+            <img id="ultimaimg" src="winscpimg/6.PNG" alt="">
+        </div>
+    </main>
+
+    <footer><!--Footer-->
+        <li id="membros">Vitor Benedito - Paulo Rondon</li><!--Membros-->
+        <li id="membros">Paulo Willyan - Marcos Arambasic</li><!--Membros-->
+        <li id="membros">Matheus Costa - Matheus Reis</li><!--Membros-->
+
+        <div class="footerend"><!--Footer final-->
+            <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> Nexus Group</p><!--Créditos-->
+        </div>
+    </footer>
+</body>
+</html>
